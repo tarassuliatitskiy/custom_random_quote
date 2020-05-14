@@ -1,0 +1,7 @@
+services:
+  logger.channel.random_quote:
+    parent: logger.channel_base
+    arguments: ['random_quote']
+  random_quote:
+    class: Drupal\random_quote\RandomQuotes
+    arguments: ['@http_client', '@logger.channel.random_quote']

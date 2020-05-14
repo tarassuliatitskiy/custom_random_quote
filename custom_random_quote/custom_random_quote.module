@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains custom_random_quote.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function custom_random_quote_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the custom_random_quote module.
+    case 'help.page.custom_random_quote':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom random quote module') . '</p>';
+      return $output;
+
+    default:
+  }
+}

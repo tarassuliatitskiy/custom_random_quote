@@ -1,0 +1,7 @@
+name: 'Custom random quote'
+type: module
+description: 'Custom random quote module'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - random_quote
